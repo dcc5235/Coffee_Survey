@@ -17,14 +17,14 @@ Header
     height: auto;
   } */
 
-  .header-text {
+  /* .header-text {
     position: absolute;
     margin-top: -7rem;
   }
 
   .header-text p {
     margin-top: -10px;
-  }
+  } */
   /* header {
     display: flex;
     flex-direction: row;

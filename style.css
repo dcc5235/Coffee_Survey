@@ -2,12 +2,11 @@
 General Styling
 =========================================================== */
 
-main {
+body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
   margin: 0 auto;
-  height: auto;
-  overflow: hidden;
+  height: 0;
 }
 
 .header-text,
@@ -32,21 +31,23 @@ Header
 }
 
 .header-img {
-  position: relative;
   opacity: 80%;
 }
 
 .header-text {
   position: absolute;
   font-size: 4vw;
-  margin-top: -20rem;
   color: #fff;
+  transform: translate(-50%, -50%);
 }
 
 .header-text p {
   font-family: "Baloo Tamma 2", cursive;
   font-size: 3vw;
-  margin-top: -20px;
+}
+
+.header-position {
+  position: relative;
 }
 
 h1 {
@@ -67,7 +68,7 @@ Main Images/Captions
 
 .survey-description,
 .form {
-  background-color: #21120b;
+  background-color: #889890;
   color: #fff;
   padding-top: 0.1rem;
   font-family: "Raleway Dots", cursive;
@@ -79,11 +80,13 @@ Survey Form
 =========================================================== */
 
 #survey-form {
+  background-color: #889890;
+  color: #fff;
   padding-top: 1rem;
   padding-left: 0.3rem;
 }
 
-.form {
+.form-group {
   text-align: left;
 }
 
