@@ -19,6 +19,11 @@ img {
 Header
 =========================================================== */
 
+#title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: none;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +33,7 @@ Header
 
 .header-img {
   position: relative;
-  opacity: 86%;
+  opacity: 80%;
 }
 
 .header-text {
@@ -49,6 +54,39 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 0;
 }
+
+/* ===========================================================
+Main Images/Captions
+=========================================================== */
+
+#title,
+#description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.survey-description,
+.form {
+  background-color: #21120b;
+  color: #fff;
+  padding-top: 0.1rem;
+  font-family: "Raleway Dots", cursive;
+  font-size: 3vw;
+}
+
+/* ===========================================================
+Survey Form
+=========================================================== */
+
+#survey-form {
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+}
+
+.form {
+  text-align: left;
+}
+
 /* ===========================================================
 Video
 =========================================================== */
