@@ -1,20 +1,63 @@
-header {
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-    background-color: #542500;
+/* ===========================================================
+General Styling
+=========================================================== */
+
+main {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
 }
 
-#title {
- color: #ffcfaa;
- font-family: cursive;
+.header-text,
+img {
+  width: 100%;
 }
 
-#description {
-    color: #b8860b;
-    font-size: 20px;
+/* ===========================================================
+Header
+=========================================================== */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-#survey-form {
-    background-color: #ffcfaa;
+.header-img {
+  position: relative;
+  opacity: 86%;
 }
+
+.header-text {
+  position: absolute;
+  font-size: 4vw;
+  margin-top: -20rem;
+  color: #fff;
+}
+
+.header-text p {
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 3vw;
+  margin-top: -20px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* ===========================================================
+Video
+=========================================================== */
+
+/* video {
+  width: 100%;
+}
+
+.video {
+  height: 330px;
+  width: 350px;
+} */
