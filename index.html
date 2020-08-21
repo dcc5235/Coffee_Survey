@@ -26,77 +26,87 @@
   </header>
 
   <main id="main">
-    <div><img src="images/bodyim1.jpg" alt="statistics about coffee consumption in the US"></div>
-    <div><img src="images/coffeestats.jpg" alt="breakdown of coffee statistics in the US"></div>
-    <div class="survey-description">
-      <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
-      <h1 id="title">About Our Survey</h1>
-      <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
-      <p>Everyday, our customers enjoy approximately 10,000 cups of coffee created by our finest baristas. We have
-        created a visual of the most ordered types of coffee by you.
-      <div><img src="images/typesofcoffee.jpg" alt="various methods for drinking coffee"></div>
-      <p id="description"><em>We want to know more about your daily
-          coffee consumption to better service our customers' preferences and create an even greater experience for
-          customers, like you.</em></p>
-    </div>
-    <!-- User Story #3: I can see a form with id="survey-form". -->
-    <form id="survey-form">
-      <div class="form-group"><label id="name-label" for="name">Name
+    <section>
+      <div class="img1"><img src="images/bodyim1.jpg" alt="statistics about coffee consumption in the US"></div>
+      <div class="img2"><img src="images/coffeestats.jpg" alt="breakdown of coffee statistics in the US"></div>
+      <div class="survey-description">
+        <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
+        <h1 id="title">About Our Survey</h1>
+        <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
+        <p>Everyday, our customers enjoy approximately 10,000 cups of coffee created by our finest baristas. We have
+          formulated a visual of the most frequently ordered types of coffee across our cafés.
+        <div><img src="images/typesofcoffee.jpg" alt="various methods for drinking coffee"></div>
+        <p id="description"><em>We want to know more about your daily
+            coffee consumption to better service our customers' preferences and create an even greater experience for
+            valuable customers, like you.</em></p>
+      </div>
+    </section>
+    <section class="form-design">
+      <!-- User Story #3: I can see a form with id="survey-form". -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
           <!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
-          <input id="name" type="text" name="name" placeholder="Enter your name" required></label></div>
-      <!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
-      <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
-      <div class="form-group"><label id="email-label" for="email">Email
-          <input id="email" type="text" name="email" placeholder="Enter your Email" required></label></div>
-      <!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
-      <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
-      <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
-      <div class="form-group"><label id="number-label" for="age">Age (optional)
-          <input id="number" type="number" name="age" placeholder="Age" min="10" max="99"></label></div>
-      <!-- User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label". -->
-      <!-- User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
-      <!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
-      <div class="form-group"><label class="job-label" for="job">Which option best describes your current
-          role?
-          <select id="dropdown">
+          <input id="name" class="form-control" type="text" name="name" placeholder="Enter your Name" required>
+        </div>
+        <!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
+        <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" class="form-control" type="text" name="email" placeholder="Enter your Email" required>
+        </div>
+        <!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
+        <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+        <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+        <div class="form-group"><label id="number-label" for="age">Age (optional)</label>
+          <input id="number" class="form-control" type="number" name="age" placeholder="Age" min="10" max="99">
+        </div>
+        <!-- User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label". -->
+        <!-- User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
+        <!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+        <div class="form-group"><label class="job-label" for="job">Which option best describes your current
+            role?</label>
+          <select id="dropdown" class="form-control">
             <option value="Role">Select current role</option>
             <option value="Student">Student</option>
             <option value="Full-time">Full-time</option>
             <option value="part-time">Part-time</option>
             <option value="other">Other</option>
             <option value="n/a">Prefer not to say</option>
-          </select></label>
-      </div>
-      <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
-      <div class="form-group">
-        <label class="consumption-label" for="consumption">How many cups of coffee do you typically drink
-          daily?</label>
-        <label><input class="cups" type="radio" name="consumption">1 cup</label>
-        <label><input class="cups" type="radio" name="consumption">2 cups</label>
-        <label><input class="cups" type="radio" name="consumption">3 cups</label>
-        <label><input class="cups" type="radio" name="consumption">4 cups or more</label>
-      </div>
-      <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
-      <div class="form-group">
-        <label class="favorite-label" for="favorite">Which is your favorite way to drink coffee? (Check all that
-          apply)</label>
-        <label><input class="cups" type="checkbox" value="favorite">Black</label>
-        <label><input class="cups" type="checkbox" value="favorite">Latte</label>
-        <label><input class="cups" type="checkbox" value="favorite">Cappuccino</label>
-        <label><input class="cups" type="checkbox" value="favorite">Espresso</label>
-        <label><input class="cups" type="checkbox" value="favorite">Red Eye</label>
-        <label><input class="cups" type="checkbox" value="favorite">Macchiato</label>
-        <label><input class="cups" type="checkbox" value="favorite">Mocha</label>
-        <label><input class="cups" type="checkbox" value="favorite">Affogato</label>
-      </div>
-      <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
-      <!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
-      <div class="form-group">
-        <label>What are some ways in which we can better your experience at our cafes?<textarea id="comments"
-            class="input-textarea" name="comment" placeholder="Enter your comment here"></textarea></label>
-      </div>
-      <input id="submit" type="submit" value="Submit">
-    </form>
+          </select>
+        </div>
+        <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+        <div class="form-group">
+          <label class="consumption-label" for="consumption">How many cups of coffee do you typically drink
+            daily?</label>
+          <label><input class="cups" type="radio" name="consumption">1 cup</label>
+          <label><input class="cups" type="radio" name="consumption">2 cups</label>
+          <label><input class="cups" type="radio" name="consumption">3 cups</label>
+          <label><input class="cups" type="radio" name="consumption">4 cups or more</label>
+        </div>
+        <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+        <div class="form-group">
+          <label class="favorite-label" for="favorite">Which is your favorite way to drink coffee? (Check all that
+            apply)</label>
+          <label><input class="cups" type="checkbox" value="favorite">Black</label>
+          <label><input class="cups" type="checkbox" value="favorite">Latte</label>
+          <label><input class="cups" type="checkbox" value="favorite">Cappuccino</label>
+          <label><input class="cups" type="checkbox" value="favorite">Espresso</label>
+          <label><input class="cups" type="checkbox" value="favorite">Red Eye</label>
+          <label><input class="cups" type="checkbox" value="favorite">Macchiato</label>
+          <label><input class="cups" type="checkbox" value="favorite">Mocha</label>
+          <label><input class="cups" type="checkbox" value="favorite">Affogato</label>
+        </div>
+        <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+        <!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
+        <div class="form-group">
+          <label>What are some ways in which we can better your experience at our cafés?</label>
+          <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Enter your comment here"></textarea>
+        </div>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </section>
   </main>
   <footer>
     footer
