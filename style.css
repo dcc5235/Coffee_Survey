@@ -156,3 +156,19 @@ Footer
 video {
   width: 100%;
 }
+
+/* ===========================================================
+Media Query
+=========================================================== */
+
+@media (min-width: 576px) {
+  .form-design {
+    display: flex;
+    justify-content: center;
+  }
+
+  label {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}
