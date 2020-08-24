@@ -2,52 +2,14 @@
 General Styling
 =========================================================== */
 
-body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.header-text,
-.header,
 img {
   width: 100%;
 }
 
-/* ===========================================================
-Header
-=========================================================== */
-
-#title {
-  text-transform: none;
-}
-
-.header-img {
-  opacity: 80%;
-}
-
-.header-position {
-  position: relative;
-}
-
-.header-text {
-  position: absolute;
-  font-size: 4vw;
-  color: #fff;
-  transform: translate(1.3%, -122.2%);
-}
-
-.header-text h {
-  font-family: "Baloo Tamma 2", cursive;
-  font-size: 3vw;
-}
-
-.header-text p {
-  margin-top: 0;
-}
-
-.header img {
-  margin-bottom: -0.25rem;
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -55,6 +17,37 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 0;
   padding-top: 0.5rem;
+}
+
+/* ===========================================================
+Header
+=========================================================== */
+
+.header-img {
+  opacity: 80%;
+}
+
+.header-text {
+  position: absolute;
+  font-size: 0.7rem;
+  color: #fff;
+  transform: translate(11.3%, -105.2%);
+}
+
+.header-text h {
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.header-text p {
+  margin-top: 0;
+}
+
+.header-img-container {
+  margin-bottom: -0.25rem;
+}
+
+header {
+  position: relative;
 }
 
 /* ===========================================================
@@ -73,7 +66,8 @@ Main Images/Captions
   background-color: #889890;
   color: #fff;
   font-family: "Raleway Dots", cursive;
-  font-size: 3vw;
+  font-size: 0.7rem;
+  text-transform: none;
 }
 
 .img1 {
@@ -168,7 +162,7 @@ Media Query
   }
 
   .header-text {
-    font-size: 3.5vw;
+    font-size: 1.3rem;
     transform: translate(1.3%, -103.5%);
   }
 
@@ -183,7 +177,7 @@ Media Query
   }
 
   .survey-description {
-    font-size: 2.5vw;
+    font-size: 1.2rem;
   }
 
   .footer-style {
