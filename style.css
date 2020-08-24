@@ -80,6 +80,15 @@ Main Images/Captions
 Survey Form
 =========================================================== */
 
+#description {
+  margin: 0 1.2rem;
+}
+
+#submit:hover,
+a:hover {
+  background-color: #495057;
+}
+
 .survey-description {
   color: #fff;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -132,6 +141,10 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
 
 /* ===========================================================
