@@ -72,10 +72,14 @@ Main Images/Captions
   text-transform: none;
 }
 
-.coffee-facts {
+.coffee-facts > img {
   padding-top: 2rem;
-  background-color: #fac16d;
   margin-top: 0;
+  background-color: #fac16d;
+}
+
+.coffee-facts {
+  font-size: 0;
 }
 
 /* ===========================================================
@@ -85,6 +89,12 @@ Survey Form
 #submit:hover,
 a:hover {
   background-color: #495057;
+  color: #fff;
+}
+
+#survey-form {
+  max-width: 378px;
+  margin: 0 auto 0.5rem auto;
 }
 
 .survey-purpose {
@@ -133,6 +143,10 @@ a:hover {
   margin-right: 0.5rem;
 }
 
+.form-group {
+  max-width: 378px;
+}
+
 label {
   display: flex;
   align-items: left;
@@ -176,17 +190,20 @@ Media Query
 =========================================================== */
 
 @media (min-width: 576px) {
-  .coffee-facts,
-  .survey-purpose img p {
-    margin: 3rem;
-  }
-
   .header-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .survey-purpose {
     font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  .survey-purpose p {
+    margin: 0 4rem;
   }
 
   .footer-style {
@@ -196,12 +213,7 @@ Media Query
   header,
   main,
   footer {
-    max-width: 982px;
+    max-width: 700px;
     margin: 0 auto;
-  }
-
-  label {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
   }
 }
