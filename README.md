@@ -1,5 +1,7 @@
 # Coffee Survey Form ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/survey_form?style=flat-square) 
 
+### Checkout the Live Version of the [Project](https://dcc5235.github.io/Coffee_Survey/)!
+
 **HTML5, CSS3**
 
 A mobile-first approach to a responsive, sample survey form built with product facts, a comprehensive questionnaire for consumers, and end video. Users who wish to fill this survey must include their name and email in the text box area and can also select answers from a drop-down menu, radio buttons, and/or checkboxes.
